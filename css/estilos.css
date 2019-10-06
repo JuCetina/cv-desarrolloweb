@@ -34,7 +34,8 @@ h2{
     margin-bottom: 40px;
 }
 
-ol, ul{
+ol,
+ul{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -165,6 +166,10 @@ figure{
 .header a{
     color: white;
     text-decoration: none;
+    height: inherit;
+    display: flex; /* Esta declaración y la siguiente, hacen que las anclas del menú, ... */
+    align-items: center; /* ... tengan todo el alto del mismo (90px heredado del selector .header), para tener espacio suficiente para hacer click en las opciones */ 
+    padding: 0 10px;
 }
 
 .header img{
@@ -178,13 +183,6 @@ figure{
 
 .header ol li{
     height: inherit;
-}
-
-.header a{
-    height: inherit;
-    display: flex; /* Esta declaración y la siguiente, hacen que las anclas del menú, ... */
-    align-items: center; /* ... tengan todo el alto del mismo (90px heredado del selector .header), para tener espacio suficiente para hacer click en las opciones */ 
-    padding: 0 10px;
 }
 
 .hero{
