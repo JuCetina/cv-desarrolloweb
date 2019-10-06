@@ -44,6 +44,15 @@ figure{
     margin: 0;
 }
 
+.contact{
+    background: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .event{
     margin: 10px;
     width: 480px;
@@ -86,6 +95,51 @@ figure{
     padding: 5px 20px;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.form-email input{
+    border-color: gray;
+    border-style: solid;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    border-radius: 5px;
+}
+
+.form-email button{
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-style: solid;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.form-email h3{
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+}
+
+.footer{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a{
+    color:white;
+}
+
+.footer img{
+    width: 80px;
+    vertical-align: middle;
 }
 
 .header{
@@ -137,23 +191,6 @@ figure{
     height: inherit;
 }
 
-.footer{
-    background-color: #1b2127;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer a{
-    color:white;
-}
-
-.footer img{
-    width: 80px;
-    vertical-align: middle;
-}
-
 .portfolio{
     background: #fafafa;
     padding: 20px;
@@ -174,7 +211,7 @@ figure{
     font-family: 'Fjalla One';
 }
 
-.project-course, 
+.project-course,
 .project-date,
 .project-url{
     margin: 10px 0;
@@ -198,4 +235,26 @@ figure{
     margin-top: 0;
 }
 
+.social-link{
+    width: 50px;
+    height: 50px;
+    display: inline-block; /* Las anclas por defecto tienen el dislay inline, por esto se debe cambiar a flex o inline-block */ 
+    background-size: 50px 50px; /* Como los íconos son de tipo svg debemos darle tamaño para que se muestren */
+    margin: 0 10px;
+}
 
+.social-link.twitter{
+    background-image: url('../images/twitter.svg');
+}
+
+.social-link.facebook{
+    background-image: url('../images/facebook.svg');
+}
+
+.social-link.github{
+    background-image: url('../images/github.svg');
+}
+
+.social-link.instagram{
+    background-image: url('../images/instagram.svg');
+}
